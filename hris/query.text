@@ -1,0 +1,193 @@
+SELECT MID(City,1,4) AS ShortCity
+FROM Customers;
+
+SELECT COUNT(DISTINCT CustomerID) AS NumberOfCustomers FROM Orders;
+
+
+SELECT COUNT(CustomerID) AS OrdersFromCustomerID7 FROM Orders
+WHERE CustomerID=7;
+
+SELECT COUNT(*) AS NumberOfOrders FROM Orders;
+
+SELECT ProductName, Price FROM Products
+WHERE Price>(SELECT AVG(Price) FROM Products);
+
+
+SELECT AVG(Price) AS PriceAverage FROM Products;
+
+
+SELECT ProductName, Price, Now() AS PerDate
+FROM Products;
+
+
+
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers
+ON Orders.CustomerID=Customers.CustomerID;
+
+
+SELECT column_name(s)
+FROM table1
+JOIN table2
+ON table1.column_name=table2.column_name;
+
+
+
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name=table2.column_name;
+
+
+
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+INNER JOIN Orders
+ON Customers.CustomerID=Orders.CustomerID
+ORDER BY Customers.CustomerName;
+
+
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name=table2.column_name;
+
+
+SELECT column_name(s)
+FROM table1
+LEFT OUTER JOIN table2
+ON table1.column_name=table2.column_name;
+
+
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders
+ON Customers.CustomerID=Orders.CustomerID
+ORDER BY Customers.CustomerName;
+
+
+SELECT Orders.OrderID, Employees.FirstName
+FROM Orders
+RIGHT JOIN Employees
+ON Orders.EmployeeID=Employees.EmployeeID
+ORDER BY Orders.OrderID;
+
+
+SELECT column_name(s)
+FROM table1
+RIGHT OUTER JOIN table2
+ON table1.column_name=table2.column_name;
+
+
+SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name=table2.column_name;
+
+
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name=table2.column_name;
+
+
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+FULL OUTER JOIN Orders
+ON Customers.CustomerID=Orders.CustomerID
+ORDER BY Customers.CustomerName;
+
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20;
+
+
+SELECT * FROM Products
+WHERE Price NOT BETWEEN 10 AND 20;
+
+SELECT * FROM Products
+WHERE (Price BETWEEN 10 AND 20)
+AND NOT CategoryID IN (1,2,3);
+
+
+SELECT * FROM Products
+WHERE ProductName BETWEEN 'C' AND 'M';
+
+
+
+SELECT * FROM Products
+WHERE ProductName NOT BETWEEN 'C' AND 'M';
+
+
+SELECT * FROM Customers
+WHERE Country NOT LIKE '%land%';
+
+
+SELECT * FROM Customers
+WHERE Country LIKE '%land%';
+
+
+SELECT * FROM Customers
+WHERE City LIKE '%s';
+
+
+SELECT * FROM employees WHERE NOT EXISTS (SELECT * FROM eotm_dyn WHERE eotm_dyn.name = employees.name)
+
+SQL EXISTS Condition - SELECT Statement example
+
+Let's look at a simple example.
+
+The following is an SQL SELECT statement that uses the SQL EXISTS condition:
+
+SELECT *
+FROM suppliers
+WHERE EXISTS (select *
+              from orders
+              where suppliers.supplier_id = orders.supplier_id);
+This SQL EXISTS condition example will return all records from the suppliers table where there is at least one record in the orders table with the same supplier_id.
+
+
+
+SQL EXISTS Condition - SELECT Statement using NOT EXISTS example
+
+The SQL EXISTS condition can also be combined with the SQL NOT operator.
+
+For example,
+
+SELECT *
+FROM suppliers
+WHERE NOT EXISTS (select * from orders Where suppliers.supplier_id = orders.supplier_id);
+This SQL EXISTS condition example will return all records from the suppliers table where there are no records in the orders table for the given supplier_id.
+
+
+SQL EXISTS Condition - INSERT Statement example
+
+The following is an example of an SQL INSERT statement that uses the SQL EXISTS condition:
+
+INSERT INTO suppliers
+(supplier_id, supplier_name)
+SELECT account_no, name
+FROM suppliers
+WHERE EXISTS (select * from orders Where suppliers.supplier_id = orders.supplier_id);
+
+SQL EXISTS Condition - UPDATE Statement example
+
+The following is an example of an SQL UPDATE statement that uses the SQL EXISTS condition:
+
+UPDATE suppliers
+SET supplier_name = (select customers.name
+                     from customers
+                     where customers.customer_id = suppliers.supplier_id)
+WHERE EXISTS (select customers.name
+              from customers
+              where customers.customer_id = suppliers.supplier_id);
+			  
+			  SQL EXISTS Condition - DELETE Statement example
+
+The following is an example of an SQL DELETE statement that uses the SQL EXISTS condition:
+
+DELETE FROM suppliers
+WHERE EXISTS (select *
+              from orders
+              where suppliers.supplier_id = orders.supplier_id);

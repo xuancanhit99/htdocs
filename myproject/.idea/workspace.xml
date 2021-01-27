@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c3722381-cb76-44a1-afa2-ff6a40d22478" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/../../php" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1kdxpWDtp7B4X1RLBDSI54oWGG8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HRMS" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\myproject\ch01\03-operator" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3722381-cb76-44a1-afa2-ff6a40d22478" name="Default Changelist" comment="" />
+      <created>1606044452945</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606044452945</updated>
+      <workItem from="1606044457897" duration="6479000" />
+      <workItem from="1606061966716" duration="9000" />
+      <workItem from="1606184538817" duration="2047000" />
+      <workItem from="1606518471613" duration="35000" />
+      <workItem from="1606852162825" duration="2889000" />
+      <workItem from="1607262724884" duration="17000" />
+      <workItem from="1607546166693" duration="7692000" />
+      <workItem from="1607590901283" duration="1193000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="715" y="345" key="#Notifications" timestamp="1606185998761">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="715" y="345" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1606185998761" />
+    <state x="679" y="91" key="#PHP" timestamp="1606046340053">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="679" y="91" key="#PHP/0.0.1920.1080@0.0.1920.1080" timestamp="1606046340053" />
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606046343734">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606046343734" />
+    <state x="1212" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606852790047">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1212" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1606852790047" />
+    <state x="1212" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1606046165390" />
+    <state x="370" y="236" key="FileChooserDialogImpl" timestamp="1607590904531">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="370" y="229" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1606518504549" />
+    <state x="370" y="236" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1607590904531" />
+    <state x="1403" y="368" key="NewPhpFileDialog" timestamp="1607557772973">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1403" y="368" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1607557772973" />
+    <state x="1274" y="459" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606046688896" />
+    <state x="13" y="105" key="SettingsEditor" timestamp="1607262740358">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="13" y="105" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607262740358" />
+    <state x="13" y="108" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1606048019936" />
+  </component>
+</project>
